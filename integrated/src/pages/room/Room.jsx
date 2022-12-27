@@ -37,7 +37,7 @@ const Room = () => {
   const [open, setOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
   const { data, loading, error } = useFetch(
-    `http://localhost:8800/api/rooms/find/${id}`
+    `/rooms/find/${id}`
   );
  
   const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;

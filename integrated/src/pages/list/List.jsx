@@ -33,10 +33,10 @@ const List = () => {
   console.log(startDate, endDate)
   let url = undefined;
   destination === "All"
-    ? (url = `http://localhost:8800/api/rooms?&min=${min || 0}&max=${
+    ? (url = `/rooms?&min=${min || 0}&max=${
         max || 999
       }`)
-    : (url = `http://localhost:8800/api/rooms?roomtype=${destination}&min=${
+    : (url = `/rooms?roomtype=${destination}&min=${
         min || 0
       }&max=${max || 999}`);
 

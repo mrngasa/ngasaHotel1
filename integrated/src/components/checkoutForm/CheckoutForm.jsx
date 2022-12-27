@@ -36,7 +36,7 @@ export default function CheckoutForm({ data, alldates, roomId, available }) {
       const getData = async () => {
         try {
           const reserve = await axios.post(
-            `http://localhost:8800/api/reserve/${roomId}`,
+            `/reserve/${roomId}`,
             {
               reserveUser: user.username,
               reserveDate: alldates,

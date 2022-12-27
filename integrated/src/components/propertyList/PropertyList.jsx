@@ -10,7 +10,7 @@ import useFetch from "../../hooks/useFetch";
 
 const PropertyList = () => {
   
-  const { data, loading, error } = useFetch(`http://localhost:8800/api/rooms/countByType`);
+  const { data, loading, error } = useFetch(`/rooms/countByType`);
   const images = [
    "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
    "https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",

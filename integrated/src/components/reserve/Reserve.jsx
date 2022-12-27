@@ -6,7 +6,7 @@ import axios from "axios";
 
 const Reserve = () => {
   const { data, loading, error } = useFetch(
-    `http://localhost:8800/api/rooms/find/${roomId}`
+    `/rooms/find/${roomId}`
   );
 
   const getDatesInRange = (startDate, endDate) => {
@@ -45,7 +45,7 @@ const Reserve = () => {
   const handleClick = async () => {
     try {
       const res = axios.put(
-        `http://localhost:8800/api/rooms/availability/${roomId}`,
+        `/rooms/availability/${roomId}`,
         {
           reserve: [{ user: user.username, unavailableDates: alldates }],
         }
@@ -57,7 +57,7 @@ const Reserve = () => {
   const handleCancel = async () => {
     try {
       const res = axios.put(
-        `http://localhost:8800/api/rooms/availability/${roomId}`,
+        `/rooms/availability/${roomId}`,
         {
           reserve: [],
         }

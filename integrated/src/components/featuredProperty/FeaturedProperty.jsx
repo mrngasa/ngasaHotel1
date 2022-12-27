@@ -9,7 +9,7 @@ import "swiper/css/autoplay";
 import useFetch from "../../hooks/useFetch";
 const FeaturedProperties = () => {
   const { data, loading } = useFetch(
-    `http://localhost:8800/api/rooms/getByrating`
+    `/rooms/getByrating`
   );
 
   return (
